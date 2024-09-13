@@ -31,7 +31,7 @@ No modules.
 | <a name="input_owner_user_groups"></a> [owner\_user\_groups](#input\_owner\_user\_groups) | Owner user groups for the OU | <pre>list(object({<br>    id = number<br>  }))</pre> | `[]` | no |
 | <a name="input_owner_users"></a> [owner\_users](#input\_owner\_users) | Owner users for the OU | <pre>list(object({<br>    id = number<br>  }))</pre> | `[]` | no |
 | <a name="input_parent_ou_id"></a> [parent\_ou\_id](#input\_parent\_ou\_id) | Parent OU ID for the OU | `number` | n/a | yes |
-| <a name="input_permission_scheme_id"></a> [permission\_scheme\_id](#input\_permission\_scheme\_id) | Permission scheme ID for the OU | `number` | n/a | yes |
+| <a name="input_permission_scheme_id"></a> [permission\_scheme\_id](#input\_permission\_scheme\_id) | Permission scheme ID for the OU | `number` | `2` | no |
 
 ## Outputs
 

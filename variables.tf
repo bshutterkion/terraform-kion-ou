@@ -11,6 +11,7 @@ variable "parent_ou_id" {
 variable "permission_scheme_id" {
   description = "Permission scheme ID for the OU"
   type        = number
+  default     = 2
 }
 
 variable "description" {
