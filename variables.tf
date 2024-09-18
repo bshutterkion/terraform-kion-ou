@@ -4,8 +4,8 @@ variable "name" {
 }
 
 variable "parent_ou_id" {
-  description = "Parent OU ID for the OU"
-  type        = number
+  description = "Parent OU ID or name for the OU"
+  type        = string
 }
 
 variable "permission_scheme_id" {
@@ -25,18 +25,15 @@ variable "labels" {
   type        = map(string)
   default     = {}
 }
+
 variable "owner_user_groups" {
-  description = "Owner user groups for the OU"
-  type = list(object({
-    id = number
-  }))
-  default = []
+  description = "Owner user group IDs for the OU"
+  type        = list(number)
+  default     = []
 }
 
 variable "owner_users" {
-  description = "Owner users for the OU"
-  type = list(object({
-    id = number
-  }))
-  default = []
+  description = "Owner user IDs for the OU"
+  type        = list(number)
+  default     = []
 }

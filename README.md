@@ -20,6 +20,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [kion_ou.this](https://registry.terraform.io/providers/kionsoftware/kion/latest/docs/resources/ou) | resource |
+| [kion_ou.parent](https://registry.terraform.io/providers/kionsoftware/kion/latest/docs/data-sources/ou) | data source |
 
 ## Inputs
 
@@ -28,9 +29,9 @@ No modules.
 | <a name="input_description"></a> [description](#input\_description) | Description for the OU | `string` | `null` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | A map of label keys to their corresponding values | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the OU | `string` | n/a | yes |
-| <a name="input_owner_user_groups"></a> [owner\_user\_groups](#input\_owner\_user\_groups) | Owner user groups for the OU | <pre>list(object({<br>    id = number<br>  }))</pre> | `[]` | no |
-| <a name="input_owner_users"></a> [owner\_users](#input\_owner\_users) | Owner users for the OU | <pre>list(object({<br>    id = number<br>  }))</pre> | `[]` | no |
-| <a name="input_parent_ou_id"></a> [parent\_ou\_id](#input\_parent\_ou\_id) | Parent OU ID for the OU | `number` | n/a | yes |
+| <a name="input_owner_user_groups"></a> [owner\_user\_groups](#input\_owner\_user\_groups) | Owner user group IDs for the OU | `list(number)` | `[]` | no |
+| <a name="input_owner_users"></a> [owner\_users](#input\_owner\_users) | Owner user IDs for the OU | `list(number)` | `[]` | no |
+| <a name="input_parent_ou_id"></a> [parent\_ou\_id](#input\_parent\_ou\_id) | Parent OU ID or name for the OU | `string` | n/a | yes |
 | <a name="input_permission_scheme_id"></a> [permission\_scheme\_id](#input\_permission\_scheme\_id) | Permission scheme ID for the OU | `number` | `2` | no |
 
 ## Outputs
